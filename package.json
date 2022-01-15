@@ -12,11 +12,12 @@
 		"dist/**/*"
 	],
 	"scripts": {
-		"lint": "eslint .",
-		"jest": "jest",
-		"test": "npm run lint && npm run jest",
 		"build": "babel src -d dist",
-		"prepublish": "npm run build"
+		"test": "peeky run",
+		"test:open": "peeky open",
+		"prepare": "yarn build",
+		"prepublishOnly": "yarn typecheck && yarn test && yarn lint",
+		"changelog": "gitmoji-changelog"
 	},
 	"dependencies": {
 		"@adjustcom/adjust-web-sdk": "^5.2.1",
