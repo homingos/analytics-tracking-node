@@ -1,6 +1,7 @@
 # Don't check auto-generated stuff into git
 .history/
 build
+dist
 node_modules
 stats.json
 coverage/
