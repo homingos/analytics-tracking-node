@@ -1,3 +1,3 @@
-import AnalyticsService from "./AnalyticsService";
+import AnalyticsService from './AnalyticsService';
 
 module.exports = AnalyticsService;
