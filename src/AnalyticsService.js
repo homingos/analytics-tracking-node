@@ -3,6 +3,12 @@ import TagManager from 'react-gtm-module';
 import { v4 as uuidv4 } from 'uuid';
 import warn from './utils/warn';
 
+/**
+ * adjust:
+ * Adjust init set method
+ * @param {String} enviornment - enviornment can be either `sandbox` or `production`
+ * @param {String} adjustToken - App Token recieved from Adjust.com
+ */
 export function adjust(enviornment, adjustToken) {
   const adjustinit = Adjust.initSdk({
     appToken: adjustToken,
@@ -12,6 +18,12 @@ export function adjust(enviornment, adjustToken) {
   return adjustinit;
 }
 
+/**
+ * adjustEvent:
+ * Adjust event function
+ * @param {String} EventToken - Event Token recieved from Adjust.com
+ * @param {Object} params - params to pass for adjust events
+ */
 export function adjustEvent(EventToken, params) {
   const timeStamp = new Date().toJSON().split('.').slice(0, -1).toString();
   const uuid = uuidv4();
@@ -33,10 +45,20 @@ export function adjustEvent(EventToken, params) {
   return event;
 }
 
+/**
+ * tagManager:
+ * Tag Manager event
+ * @param {Object} tagManagerArgs - Google Tag manager Arguments
+ */
 export function tagManager(tagManagerArgs) {
   return TagManager.initialize(tagManagerArgs);
 }
 
+/**
+ * tagManager:
+ * Tag Manager event
+ * @param {Object} tagManagerArgs - Google Tag manager Arguments
+ */
 export function init({ enviornment = 'sandbox', adjustToken, tagManagerArgs }) {
   if (enviornment === 'sandbox') {
     warn('Using sandbox Enviornment !!');
