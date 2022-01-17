@@ -1,7 +1,7 @@
 {
   "name": "analytics-tracking-node",
-  "description": "",
-  "version": "1.0.0",
+  "description": "A analytics and Tracking Module",
+  "version": "1.1.0",
   "private": true,
   "main": "dist/analytics-tracking-node.js",
   "module": "dist/esm/index.js",
@@ -19,7 +19,6 @@
     "url": "https://github.com/homingos/analytics-tracking-node/issues"
   },
   "scripts": {
-    "start": "webpack-dev-server --config demo/webpack.config.js --hot --inline",
     "build": "npm run build:umd && npm run build:esm",
     "build:esm": "cross-env BABEL_ENV=esm babel src --out-dir dist/esm",
     "build:umd": "cross-env BABEL_ENV=umd webpack --mode=production",
@@ -29,6 +28,7 @@
   },
   "dependencies": {
     "@adjustcom/adjust-web-sdk": "^5.2.1",
+    "react-ga": "^3.3.0",
     "react-gtm-module": "^2.0.11",
     "uuid": "^8.3.2"
   },
@@ -53,6 +53,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.28.0",
+    "fs-extra": "^10.0.0",
     "gitmoji-changelog": "^2.3.0",
     "jest": "^19.0.2",
     "jest-cli": "^21.2.1",

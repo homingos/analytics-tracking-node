@@ -1,3 +1,7 @@
-import AnalyticsService from './AnalyticsService';
+import * as Defaults from './AnalyticsService';
 
-module.exports = AnalyticsService;
+export const { init } = Defaults;
+
+export default {
+  ...Defaults
+};
