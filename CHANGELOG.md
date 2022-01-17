@@ -1,5 +1,22 @@
 # Changelog
 
+<a name="1.1.0"></a>
+## 1.1.0 (2022-01-17)
+
+### Added
+
+- ✨ add webpack and update build methods [[9022f4a](https://github.com/homingos/analytics-tracking-node/commit/9022f4a735359ac7ec072e3a0d6755387bd66539)]
+
+### Changed
+
+- 🚸 update Services [[e651550](https://github.com/homingos/analytics-tracking-node/commit/e6515500d0b9fa4f540f8127ec828020c37b1e04)]
+- 🚸 update settings for package !! [[0ccabdc](https://github.com/homingos/analytics-tracking-node/commit/0ccabdc6ec9869d8012ad02cdfbd97ef4208b7a3)]
+
+### Removed
+
+- 🔥 update Function docs and types [[35b351c](https://github.com/homingos/analytics-tracking-node/commit/35b351c79e57b5acce034a02670b640852bdd8e7)]
+
+
 <a name="1.0.0"></a>
 ## 1.0.0 (2022-01-15)
 
