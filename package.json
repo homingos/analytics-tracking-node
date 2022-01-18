@@ -11,9 +11,6 @@
     "@bucharitesh"
   ],
   "license": "MIT",
-  "files": [
-    "dist/**/*"
-  ],
   "bugs": {
     "url": "https://github.com/homingos/analytics-tracking-node/issues"
   },
@@ -25,6 +22,7 @@
     "prettier": "prettier --write src/**/* src/* *.js *.ts",
     "changelog": "gitmoji-changelog",
     "preversion": "npm run lint",
+    "prepublish": "npm run build",
     "version": "node ./version-bower.js && npm run build && git add -A bower.json"
   },
   "dependencies": {
