@@ -5,7 +5,7 @@ This package aims to simplify the use of Analytics.
 ## Installation
 
 ```bash
-npm install --from-git git@github.com:homingos/analytics-tracking-node.git
+npm install --from-git git@github.com:homingos/analytics-tracking-node.git#1.1.0
 ```
 
 ## Usage
