@@ -5,7 +5,7 @@ This package aims to simplify the use of Analytics.
 ## Installation
 
 ```bash
-yarn add analytics-tracking-node
+npm install --from-git git@github.com:homingos/analytics-tracking-node.git
 ```
 
 ## Usage
