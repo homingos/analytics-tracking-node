@@ -1,6 +1,7 @@
 import * as Adjust from '@adjustcom/adjust-web-sdk';
 import TagManager from 'react-gtm-module';
 import { v4 as uuidv4 } from 'uuid';
+
 import warn from './utils/warn';
 
 /**
@@ -24,13 +25,20 @@ export function adjust(enviornment, adjustToken) {
  * @param {String} EventToken - Event Token recieved from Adjust.com
  * @param {Object} params - params to pass for adjust events
  */
-export function adjustEvent(EventToken, params) {
+export function adjustEvent(EventToken, eventName, eventAttributes) {
   const timeStamp = new Date().toJSON().split('.').slice(0, -1).toString();
   const uuid = uuidv4();
   const event = Adjust.trackEvent({
     eventToken: EventToken,
     partnerParams: [
-      params,
+      {
+        key: 'name',
+        value: eventName
+      },
+      {
+        key: 'attributes',
+        value: eventAttributes
+      },
       {
         key: 'date',
         value: timeStamp
