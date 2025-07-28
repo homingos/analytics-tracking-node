@@ -2,12 +2,12 @@
 # yarn lockfile v1
 
 
-"@adjustcom/adjust-web-sdk@^5.2.1":
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/@adjustcom/adjust-web-sdk/-/adjust-web-sdk-5.2.1.tgz#91bf45dcf3fde01bbb8627c34a4c97e01024b294"
-  integrity sha512-uB8bG8qZnNLYPJgtk3mgG8SojcUNjoI8zfvPJbR6cBbQMwd+ahAqiYIp27coFLSyI5f5aFfrfKPbDhY61w6PQg==
+"@adjustcom/adjust-web-sdk@^5.7.2":
+  version "5.7.2"
+  resolved "https://registry.yarnpkg.com/@adjustcom/adjust-web-sdk/-/adjust-web-sdk-5.7.2.tgz#ce7845b31601c5cc7488ea0325498fe45d5fab55"
+  integrity sha512-tscAFtJwq5q/opZDyYxnwtrr0OSNhLQYZwVC84fiv2/yOQXWL/fol9k9OwKTPDzkGkbj9vX1zrrp7EBv3RMzmw==
   dependencies:
-    "@babel/runtime" "^7.12.13"
+    "@babel/runtime" "^7.24.4"
 
 "@babel/cli@7.6.2":
   version "7.6.2"
@@ -788,12 +788,17 @@
     core-js-pure "^3.20.2"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.10.2", "@babel/runtime@^7.12.13", "@babel/runtime@^7.16.3", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.10.2", "@babel/runtime@^7.16.3", "@babel/runtime@^7.8.4":
   version "7.16.7"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.16.7.tgz#03ff99f64106588c9c403c6ecb8c3bafbbdff1fa"
   integrity sha512-9E9FJowqAsytyOY6LG+1KuueckRL+aQW+mKvXRXnuFGyRAyepJPmEo9vgMfXUA6O9u3IeEdv9MAkppFcaQwogQ==
   dependencies:
     regenerator-runtime "^0.13.4"
+
+"@babel/runtime@^7.24.4":
+  version "7.28.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.28.2.tgz#2ae5a9d51cc583bd1f5673b3bb70d6d819682473"
+  integrity sha512-KHp2IflsnGywDjBWDkR9iEqiWSpc8GIi0lgTT3mOElT0PP1tG26P4tmFI2YvAdzgq9RGyoHZQEIEdZy6Ec5xCA==
 
 "@babel/template@^7.16.7", "@babel/template@^7.3.3", "@babel/template@^7.6.0":
   version "7.16.7"
