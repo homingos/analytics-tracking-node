@@ -26,7 +26,7 @@
     "version": "node ./version-bower.js && npm run build && git add -A bower.json"
   },
   "dependencies": {
-    "@adjustcom/adjust-web-sdk": "^5.2.1",
+    "@adjustcom/adjust-web-sdk": "^5.7.2",
     "react-ga": "^3.3.0",
     "react-gtm-module": "^2.0.11",
     "uuid": "^8.3.2"
